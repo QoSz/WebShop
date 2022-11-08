@@ -25,4 +25,8 @@ export class HomeComponent implements OnInit {
     this.category = newCategory;
   }
 
+  onAddToCart(data: any): void {
+    console.log(data);
+  }
+
 }
