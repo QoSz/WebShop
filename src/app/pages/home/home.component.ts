@@ -57,6 +57,11 @@ export class HomeComponent implements OnInit, OnDestroy {
     this.getProducts(); 
   }
 
+  onSortChange(newSort: string): void {
+    this.sort = newSort;
+    this.getProducts();
+  }
+
   ngOnDestroy(): void {
       if (this.productsSubscription) {
         this.productsSubscription.unsubscribe();
