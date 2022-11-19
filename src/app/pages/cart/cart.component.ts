@@ -70,7 +70,7 @@ export class CartComponent implements OnInit {
       let stripe = await loadStripe('pk_test_51M5m3RDQwbwuxw7nHMA0lJvgn9sQK3aBg1Yvgcc82KbnW5WfYzERR9lCHqvrInEkFkUW5L6cRNBDjcSrgb7v8Ulf00EUaAXssD');
       stripe?.redirectToCheckout({
         sessionId: res.id
-      })
+      });
     });
   }
 }
